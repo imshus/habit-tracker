@@ -1,0 +1,155 @@
+.habit-form {
+  display: flex;
+}
+
+.habit-form input {
+  font-size: 1.5rem;
+  padding: 0.3rem;
+  padding-left: 0.4rem;
+  width: 25rem;
+  border-radius: 25px;
+  border: none;
+}
+
+.habit-form .button {
+  margin-left: 0.5rem;
+  height: 100%;
+  width: 2.7rem;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  padding: 0.2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.habit-form .fa-plus {
+  position: relative;
+  color: rgba(24, 22, 22, 0.925);
+}
+
+.habit-list {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  padding: 0px 0px;
+}
+
+.habit-list li {
+  list-style: none;
+  font-size: 2rem; 
+  justify-content: left;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid rgba(236, 232, 232, 0.363);
+  cursor: pointer;
+  width: 100%;
+  display: inline-flex;
+  flex-flow: initial;
+  padding: 5px;
+  padding-left: 10px;
+}
+
+.habit-list li div {
+  display: inline;
+}
+
+.habit-list li .delete {
+  flex: 25;
+}
+
+.habit-list li .fas {
+  position: inherit;
+}
+
+#symbol {
+  margin-top: 25px;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  font-size: 12px;
+  gap: 10px;
+}
+
+.fas {
+  font-size: 30px; 
+}
+
+.fa-star,
+.fa-trash {
+  font-size: 25px; 
+}
+
+.fa-check-circle {
+  color: green;
+}
+
+.fa-times-circle {
+  color: red;
+}
+
+.fa-minus-circle {
+  color: gold;
+}
+
+@media (max-width: 768px) {
+  .habit-form input {
+    width: 20rem; 
+    font-size: 1.4rem; 
+  }
+
+  .habit-list li {
+    font-size: 1.8rem; 
+  }
+
+  .fas {
+    font-size: 28px; 
+  }
+}
+
+@media (max-width: 425px) {
+  .habit-form input {
+    width: 15rem; 
+    font-size: 1.3rem; 
+  }
+
+  .habit-list li {
+    font-size: 1.6rem; 
+  }
+
+  .fas {
+    font-size: 24px; 
+  }
+
+  .habit-form .button {
+    width: 2.5rem; 
+  }
+}
+
+@media (max-width: 375px) {
+  .habit-form input {
+    width: 12rem; 
+    font-size: 1.2rem; 
+  }
+
+  .habit-list li {
+    font-size: 1.5rem; 
+  }
+}
+
+@media (max-width: 320px) {
+  .habit-form input {
+    width: 10rem;
+    font-size: 1rem;
+  }
+
+  .habit-list li {
+    font-size: 1.4rem; 
+  }
+
+  #symbol {
+    font-size: 10px; 
+  }
+}
